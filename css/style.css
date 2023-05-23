@@ -7,8 +7,8 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #069C54;
-  --first-color-alt: #048654;
+  --first-color: #0101e1;
+  --first-color-alt: #0f0ca0;
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #A6A6A6;
@@ -221,7 +221,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(6,156,84,.5);
+  background: rgba(11, 11, 84, 1);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
