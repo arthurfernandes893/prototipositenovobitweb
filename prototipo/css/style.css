@@ -8,7 +8,7 @@
 
   /*========== Colors ==========*/
   --first-color: #0101e1;
-  --first-color-alt: #0f0ca0;
+  --first-color-alt: #0f0ca0; 
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #A6A6A6;
@@ -63,7 +63,11 @@ html{
   scroll-behavior: smooth;
 }
 
-
+/*marca-texto*/
+.highlight-text{
+  color: #ffffff;
+  background-color: #0f0ca0;
+}
 
 /*========== Button Carrinho ==========*/
 .change-theme{
@@ -114,16 +118,29 @@ img{
 .section-title{
   font-size: var(--h1-font-size);
   color: var(--title-color);
-  margin-bottom: var(--mb-3);
-}
-
-.section-subtitle{
-  display: block;
-  color: var(--first-color);
-  font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
 }
+.section-title-below{
+  font-size: var(--h1-font-size);
+  color: var(--first-color-alt);
+  margin-bottom: var(--mb-1);
+}
+.section-subtitle{
+  display: block;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+  font-size: var(--h2-font-size);
+}
 
+.section-title-history{
+  display: block;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+  font-size: var(--h2-font-size);
+  text-decoration: underline;
+}
 /*========== LAYOUT ==========*/
 .bd-container{
   max-width: 960px;
@@ -136,6 +153,10 @@ img{
   display: grid;
   gap: 1.5rem;
 }
+.bd-grid-thinner{
+  display: grid;
+  gap: 1rem;
+}
 
 .l-header{
   width: 100%;
@@ -144,6 +165,70 @@ img{
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+}
+
+
+/*=======VALUES========*/
+.values-container{
+  /*height: 100rem;*/
+  align-content: center;
+  max-width: 30rem;
+}
+.round-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1 0 0;
+  border-radius: 1.25rem;
+  color:#ffffff;
+  width: fit-content;
+  height: min-content;
+}
+
+.blue{
+  background: #0500FF;
+}
+.black{
+  color: black;
+}
+.offwhite{
+  color: #EBEBEB;
+}
+.icons{
+  width: 13.125rem;
+  height: 12.5rem;
+
+}
+
+.typo-subtitle{
+ 
+  text-align: center;
+  font-family: var(--body-font);
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 4.0625rem */
+  align-self: stretch;
+}
+
+.typo-text{
+  text-align: center;
+  font-family: var(--body-font);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 1.875rem */
+  align-self: stretch;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+/*========== HOME ==========*/
+.color-navbar{
+  color:#0101e1;
+}
+.bg-welcome{
+  background:#0500FF;
 }
 
 /*========== NAV ==========*/
@@ -262,7 +347,8 @@ img{
 }
 
 .home__img{
-  width: 300px;
+  height: 25rem;
+
   justify-self: center;
 }
 
@@ -460,7 +546,7 @@ img{
   }
 
   .section{
-    padding-top: 8rem;
+    padding-top: 3rem;
   }
 
   .nav{
