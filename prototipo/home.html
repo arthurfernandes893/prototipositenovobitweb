@@ -4,111 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>BitWebJr</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ao Cubo Marmoraria</title>
 </head>
-<body>
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQlcv1qHJNghXRoMTWpBf8JMiskHfZ_tc&callback=initMap">
-</script>     
-</body>
+
 <!--Scroll-->
 <a href="#" class="scrolltop" id="scroll-top">
     <i class='bx bx-chevron-up scrolltop__icon'></i>
 </a>
-<!--header-->
-<header class="l-header" id="header">
-    <nav class="nav bd-container">
-        <a href="#" class="nav__logo">BitWebJr</a>
-
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="home.html" class="nav__link active-link">Home</a></li>
-                <li class="nav__item"><a href="produtos.html" class="nav__link">Produtos</a></li>
-                <li class="nav__item"><a href="servicos.html" class="nav__link">Sobre Nós</a></li>
-                <li class="nav__item"><a href="contato.html" class="nav__link">Contato</a></li>
-
-                <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-            </ul>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-light">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-5 color-navbar">BitWebJr</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav fs-5">
+              <a class="nav-link color-navbar" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Produtos</a>
+              <a class="nav-link" href="#">História</a>
+              <a class="nav-link" aria-disabled="true">Contato</a>
+            </div> 
+          </div>
         </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-    </nav>
+      </nav>
 </header>
 
-<main class="l-main">
-<!--ADICIONAR IAMGEM DO MORRO COM AS NUVENS AQUI-->
-    <section class="home" id="home">
-        <div class="home__container bd-container bd-grid">
-            <div class="home__data">
-                <h1 class="home__title">BitWebJr</h1>
-                <a href="#" class="button">Desenvolvimento Web ao seu alcance</a>
-            </div>
-
-            <img src="img/logo.png" alt="logitipo" class="home__img">
+<section class="bg-welcome">
+    <div class="p-5 container text-center ">
+        <div class="row">
+                <h1 class="text-light">BitWebJr</h1>
+                <a href="#" class="button">Desenvolvimento Web ao seu alcance</a>         
         </div>
-    </section>
+    <!--IGUAL O SITE DA HIDROS, FOTO DE FUNDO, A COM AS MONTANHAS E NUVENS, MEIO DESFOCADO.-->    
+    </div>
 
-    <section class="menu section bd-container" id="menu">        
-        <h2 class="section-title">Nossa História</h2>
-        <span class="section-subtitle">Desde sempre atendendo a população</span>
-
-        <div class="home__container bd-container bd-grid">
-            <div class="home__data">                              
-                <a>A BitWebJr foi fundada em 2009, por um grupo de alunos e professores da UERJ, inspirados pelos ideais das empresas juniores. 
-                    A empresa iniciou suas atividades com serviços de consultoria em desenvolvimento de websites. 
-                    Ao longo dos anos, a BitWebJr ampliou sua atuação, expandindo seus serviços para projetos e produtos de tecnologia. 
-                    A empresa encontrou um grande potencial de projetos na área acadêmica, também prestando serviços para outras EJs e departamentos de pós-graduação da UERJ. 
-                </a>
+</section>
+<section>
+    <div class="p-4 row">
+    <h2 class="section-title">Somos uma <span class="section-title-below"> Empresa Júnior</span> da UERJ,</h2>
+    <h3 class="section-subtitle">estamos crescendo e voluindo a cada dia!</h3>  
+    </div>      
+</section>
+<section>
+    <div class="m-5 p-2">
+     <!--RESOLVER PROBLEMA DAS IMAGENS PERMITIRÁ AJUSTAR O GRID-->   
+        <div class="row">
+            <div class="col-5">
+                    <div class="round-block black">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icons">
+                            <path d="M183.717 19.8333C173.893 17.7381 163.858 16.6761 153.792 16.6667C144.285 16.0918 134.752 17.3125 125.742 20.2586C116.732 23.2047 108.423 27.818 101.292 33.8333C91.9 42.7778 82.5958 51.6944 73.3792 60.5833C62.7917 59.5 37.6792 58.9167 20.8792 75.0833C19.2495 76.6447 18.3347 78.7568 18.3347 80.9583C18.3347 83.1599 19.2495 85.272 20.8792 86.8333L119.754 181.167C121.394 182.719 123.611 183.59 125.923 183.59C128.235 183.59 130.452 182.719 132.092 181.167C149.154 164.5 148.629 141 147.579 131.167L175.667 104.5C203.579 77.9166 190.892 28 190.367 25.9167C189.963 24.4136 189.126 23.0478 187.951 21.973C186.776 20.8983 185.31 20.1572 183.717 19.8333ZM163.067 92.75L131.917 122.25C130.908 123.22 130.165 124.411 129.753 125.719C129.341 127.027 129.273 128.411 129.554 129.75C131.444 140.898 129.799 152.33 124.829 162.583L40.2167 81.8333C51.1529 77.0397 63.378 75.5843 75.2167 77.6666C76.6173 77.8403 78.0413 77.6885 79.367 77.2241C80.6926 76.7598 81.8805 75.9966 82.8292 75C82.8292 75 95.0792 62.9166 113.542 45.3333C124.894 36.6509 139.267 32.3658 153.792 33.3333C160.624 33.3656 167.441 33.9229 174.179 35C176.279 46.9166 179.604 77 163.067 92.75Z" fill="#0500FF"/>
+                            <path d="M138.304 85.8333C147.969 85.8333 155.804 78.3714 155.804 69.1667C155.804 59.9619 147.969 52.5 138.304 52.5C128.639 52.5 120.804 59.9619 120.804 69.1667C120.804 78.3714 128.639 85.8333 138.304 85.8333Z" fill="#0500FF"/>
+                            <path d="M44.4167 133.333C26.9167 141.667 26.9167 175 26.9167 175C43.1135 174.56 58.6192 168.653 70.6667 158.333L44.4167 133.333Z" fill="#0500FF"/>
+                            </svg>
+                        
+                            <span class="typo-subtitle">Missão</span>
+                            <span class="typo-text">Oferecer soluções inovadoras, acessíveis para nossos clientes, 
+                            sempre priorizando a humanização no atendimento e a busca pela satisfação do cliente.</span>
+                    </div>
             </div>
-
-            <img src="img/logo.png" alt="" class="home__img">
-        </div>
-
-        <div class="home__container bd-container bd-grid">
-            <img src="img/LOGO REDONDA E QUADRADA MAIS ESPAÇOSA.png" alt="" class="home__img">
-
-            <div class="home__data">                              
-                <a> Assim como muitas outras empresas, a BitWebJr foi impactada pela pandemia de Covid-19. Devido às dificuldades enfrentadas durante a pandemia, a empresa chegou a um ponto em que seu fim parecia iminente. 
-                    No entanto, graças à resiliência e determinação de seus novos membros, a BitWebJr está se reerguendo e superando as adversidades, a fim de se fortalecer novamente como empresa júnior de destaque da UERJ. 
-                    Nós temos como propósito principal oferecer um espaço de aprendizagem tecnológica para nossos membros, permitindo que eles desenvolvam habilidades de gestão e empreendedorismo, ao mesmo tempo que oferecemos soluções inovadoras, de qualidade e baixo custo para nossos clientes.
-                </a>
-            </div>            
-        </div>
-
-        <div class="home__container bd-container bd-grid">
-            <div class="home__data">                              
-                <a> Missão: Nossa missão como empresa júnior é oferecer soluções tecnológicas inovadoras, dentro do nosso leque de serviços, acessíveis para nossos clientes, sempre priorizando a humanização no atendimento e a busca pela satisfação do cliente. </a>
+            <div class="col-5">
+                <div class="round-block blue offwhite">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icons">
+                        <path d="M105 50C76.0462 50 52.5 72.425 52.5 100C52.5 127.575 76.0462 150 105 150C133.954 150 157.5 127.575 157.5 100C157.5 72.425 133.954 50 105 50ZM105 133.333C85.6975 133.333 70 118.383 70 100C70 81.6167 85.6975 66.6667 105 66.6667C124.302 66.6667 140 81.6167 140 100C140 118.383 124.302 133.333 105 133.333Z" fill="#EBEBEB"/>
+                        <path d="M105 16.6666C57.5663 16.6666 17.5 54.825 17.5 100C17.5 145.175 57.5663 183.333 105 183.333C152.434 183.333 192.5 145.175 192.5 100C192.5 54.825 152.434 16.6666 105 16.6666ZM105 166.667C67.0513 166.667 35 136.142 35 100C35 63.8583 67.0513 33.3333 105 33.3333C142.949 33.3333 175 63.8583 175 100C175 136.142 142.949 166.667 105 166.667Z" fill="#EBEBEB"/>
+                        <path d="M105 83.3334C95.5412 83.3334 87.5 90.9917 87.5 100C87.5 109.008 95.5412 116.667 105 116.667C114.459 116.667 122.5 109.008 122.5 100C122.5 90.9917 114.459 83.3334 105 83.3334Z" fill="#EBEBEB"/>
+                        </svg>
+                    <span class="typo-subtitle">Visão</span>
+                    <span class="typo-text">Reconhecimento como uma EJ que forma profissionais 
+                        capacitados e comprometidos com a transformação do mundo através da tecnologia.</span>
+                </div>
             </div>
-
-            <div class="home__data">                              
-                <a> Visão: Nosso objetivo é de sermos reconhecidos como uma empresa júnior de referência no mercado de tecnologia, destacando-nos pela qualidade dos serviços prestados e pela formação de profissionais capacitados e comprometidos com a transformação do mundo através da tecnologia. 
-                </a>
+            <div class="col-5">
+                <div class="round-block black">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icons">
+                        <path d="M155.436 108.5L122.833 133.333H79.0833V125H114.652C115.443 125 116.22 124.795 116.899 124.407C117.577 124.02 118.133 123.464 118.507 122.8C118.88 122.136 119.058 121.387 119.02 120.634C118.982 119.881 118.73 119.152 118.292 118.525L110.522 107.425C108.928 105.14 106.765 103.266 104.226 101.971C101.687 100.675 98.8512 99.9982 95.9708 100H26.5833C24.2626 100 22.037 100.878 20.3961 102.441C18.7551 104.004 17.8333 106.123 17.8333 108.333V158.333C17.8333 162.754 19.677 166.993 22.9589 170.118C26.2408 173.244 30.692 175 35.3333 175H119.674C123.416 175.001 127.115 174.24 130.522 172.768C133.93 171.296 136.968 169.148 139.432 166.467L192.833 108.333L180.128 104.3C175.972 102.98 171.534 102.673 167.221 103.407C162.907 104.141 158.856 105.892 155.436 108.5ZM168.841 61.5833C172.787 57.7083 175.228 52.35 175.228 46.4333C175.228 40.5167 172.787 35.1583 168.841 31.2833C166.845 29.2998 164.449 27.7208 161.797 26.6411C159.144 25.5613 156.29 25.0031 153.406 25C153.406 25 142.521 24.975 131.583 35.7167C120.646 24.975 109.761 25 109.761 25C106.877 25.0035 104.024 25.561 101.372 26.6392C98.7196 27.7174 96.3231 29.2941 94.3258 31.275C90.3795 35.1583 87.9383 40.5083 87.9383 46.425C87.9383 52.3417 90.3795 57.7083 94.3258 61.575L131.583 100L168.841 61.5833Z" fill="#0500FF"/>
+                        </svg>
+                    <span class="typo-subtitle">Valores</span>
+                    <span class="typo-text">
+                        Soluções criativas e inovadoras
+                        Integridade e transparência
+                        Ética e responsabilidade
+                        Qualidade nos serviços
+                        Aprendizado continuo
+                    </span>
+                </div>
             </div>
-
-            <div class="home__data">                              
-                <a> Valores:
-                    <br>- soluções criativas e inovadoras 
-                    <br>- integridade e transparência 
-                    <br>- ética e responsabilidade 
-                    <br>- trabalho em equipe 
-                    <br>- qualidade nos serviços 
-                    <br>- aprendizado contínuo</a>
-            </div>            
         </div>
-    </section>  
-</main>
+    </div>
+</section>
 
 <!--Footer-->
 
 <footer class="footer section bd-container">
     <div class="footer__container bd-grid">
         <div class="footer__content">
-            <a href="#" class="footer__logo">Ao cubo</a>
-            <span class="footer__description">Marmoraria</span>
+            <a href="#" class="footer__logo">BitWebJr</a>
+           
+            <span class="footer__description">Desenvolvimento Web e Mobile</span>
             <div>
                 <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
                 <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
@@ -125,21 +122,21 @@
             </ul>
         </div>       
 
+        
         <div class="footer__content">
             <h3 class="footer__title">Endereço</h3>
             <ul>
                 <li>Rua São Francisco Xavier, 524</li>
                 <li>UERJ - Maracanã</li>
-                <li>21 99087 - 2321</li>
-                <li>bitwebjr@gmail.com</li>
             </ul>
         </div>
-    </div>
 
-    <p class="footer__copy">&#169; 2023 Marmoraria. Todos os direitos reservados</p>
+          
+    </div>
+    <span class="footer__copy">bitwebjr@gmail.com</span>
+    <p class="footer__copy">&#169; 2023 BitWebJr. Todos os direitos reservados</p>
 </footer>
 
-<script src="https://unpkg.com/scrollreveal"></script>        
-<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
