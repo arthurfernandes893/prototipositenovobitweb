@@ -142,6 +142,15 @@ img{
   font-size: var(--h2-font-size);
   text-decoration: underline;
 }
+
+/***** CHAMADA ******/
+.img-chamada{
+  width: 148px;
+}
+.bg-chamadas{
+  background-color:#0f0ca0;
+}
+
 /*========== LAYOUT ==========*/
 .bd-container{
   max-width: 960px;
