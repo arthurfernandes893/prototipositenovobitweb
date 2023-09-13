@@ -2,120 +2,74 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--está estragando a responsividades-->
+    <title>BitWebJr</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ao Cubo Marmoraria</title>
 </head>
+
 <body>
-    
-</body>
-<!--Scroll-->
-<a href="#" class="scrolltop" id="scroll-top">
-    <i class='bx bx-chevron-up scrolltop__icon'></i>
-</a>
-<!--header-->
-<header class="l-header" id="header">
-    <nav class="nav bd-container">
-        <a href="#" class="nav__logo">Ao Cubo</a>
-
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="home.html" class="nav__link active-link">Home</a></li>
-                <li class="nav__item"><a href="produtos.html" class="nav__link">Produtos</a></li>
-                <li class="nav__item"><a href="servicos.html" class="nav__link">Serviços</a></li>
-                <li class="nav__item"><a href="contato.html" class="nav__link">Contato</a></li>
-
-                <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-            </ul>
+<header>
+    <nav class="navbar navbar-expand-xl  bg-body-alert"> <!--ajustar qual tamanho a barra se fecha-->
+        <div class="container-fluid">
+          <a class="navbar-brand fs-6 color-navbar"><img class="img-fluid"  style="width: 40px;" src="img/nuvem-logo-bitweb-azul.png"  alt="logotipo da empresa que funciona como botao para a home"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav fs-6">
+              <a class="nav-link color-navbar" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Produtos</a>
+              <a class="nav-link" href="#">História</a>
+              <a class="nav-link" aria-disabled="true">Contato</a>
+            </div> 
+          </div>
         </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-    </nav>
+      </nav>
 </header>
 
-
-<main class="l-main">
-
-</main>
-<!--Home-->
-
-<!--Produtos-->
-<!--Serviços-->
-<!--Contato-->
-<section class="contato section bd-container" id="contato">
-    <div class="contato__container bd-grid">
-        <div class="contato__data">
-            <h2 class="section-title contato__initial">Endereço</h2>
-            <p class="contato__description">Estamos localizados na Rua Firmino do Amaral, 626 - Freguesia de Jacarepaguá</p>
-        </div>
-
-                <div class="api_maps api_container bd-grid" id="api-maps">
-
-        </div>
-
-        <div class="contato__data">
-            <h2 class="section-title contato__initial">Fale Conosco</h2>
-            <p class="contato__description">Envie uma mensagem, teremos o prazer em responder</p>
-
-            <div class="contato__container bd-grid">
-                <form class="form" action="#" method="post">
-                    <input type="text" name="nome" required />
-                    <input type="email" name="email" required />
-                    <input type="textarea" name="textl" required />
-                </form>
-            </div>   
-            
-            <div class="contato__button">
-                <a href="#" class="button">Enviar</a>
-            </div>
-            
-        </div>
-
-        
+<section>
+    <div class="row">
+        <div class="ts-3">Contatos:</div>
+        <div class="ts-4">formulario pipefy</div>
     </div>
 </section>
 
 <!--Footer-->
-<footer class="footer section bd-container">
-    <div class="footer__container bd-grid">
-        <div class="footer__content">
-            <a href="#" class="footer__logo">Ao cubo</a>
-            <span class="footer__description">Marmoraria</span>
-            <div>
-                <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+
+<footer class="bg-footer ">
+    <div class="row align-items-center p-2">
+        <div class="col">
+            <div><img class="img-fluid" src="img/logo-bitweb-azul.png" style="width: 150px;" alt="logotipo da bitwebjr"></div>
+        </div>
+        <div class="col-5"> 
+            <div class="row">
+                <div class=" col fw-bolder fs-5 text-black">Home</div>
+                <div class="col fw-bolder fs-5 text-black">Serviços</div>
+                <div class="col fw-bolder fs-5 text-black">Equipe</div>
+                <div class="col fw-bolder fs-5 text-black">Contato</div>
             </div>
         </div>
-
-        <div class="footer__content">
-            <h3 class="footer__title">Serviços</h3>
-            <ul>
-                <li><a href="#" class="footer__link">Alvenaria</a></li>
-                <li><a href="#" class="footer__link">Polimento</a></li>                        
-                <li><a href="#" class="footer__link">Manutenção</a></li>
-            </ul>
-        </div>       
-
-        <div class="footer__content">
-            <h3 class="footer__title">Endereço</h3>
-            <ul>
-                <li>Rua Firmino do Amaral, 626</li>
-                <li>Freguesia - Jacarepaguá</li>
-                <li>21 99087 - 2321</li>
-                <li>marmoraria@gmail.com</li>
-            </ul>
+        <div class="col text-black">
+                <h3 class="fw-bold text-center fs-3 p-3">Redes Sociais</h3>
+                <div class="row">
+                
+                    <div class="col"><img src="img/Granito Vermelho F1.jpg"></div>
+                    <div class="col"><img src="img/Granito Vermelho F1.jpg"></div>
+                    <div class="col"><img src="img/Granito Vermelho F1.jpg"></div>
+                </div>
+               
         </div>
+   
     </div>
-
-    <p class="footer__copy">&#169; 2023 Marmoraria. Todos os direitos reservados</p>
 </footer>
 
-<script src="https://unpkg.com/scrollreveal"></script>        
-<script src="js/script.js"></script>
+<section>
+    <p class="text-white bg-welcome text-center p-1">&#169; 2023 BitWebJr. Todos os direitos reservados</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
