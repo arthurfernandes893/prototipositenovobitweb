@@ -243,6 +243,9 @@ img{
 .bg-footer{
   background: #bcbcbf;
 }
+.bg-offwhite{
+  background: #e7e9e9;
+}
 /*========== NAV ==========*/
 .nav{
   max-width: 1024px;
