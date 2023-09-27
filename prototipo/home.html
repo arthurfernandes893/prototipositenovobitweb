@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--está estragando a responsividades-->
     <title>BitWebJr</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -11,9 +11,9 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-xl bg-body-light"> <!--ajustar qual tamanho a barra se fecha-->
+    <nav class="navbar navbar-expand-xl  bg-body-alert"> <!--ajustar qual tamanho a barra se fecha-->
         <div class="container-fluid">
-          <a class="navbar-brand fs-6 color-navbar"><img src="img/nuvem-logo-bitweb-azul.png" style="height:auto;width: 70px;" alt="logotipo da empresa que funciona como botao para a home"> </a>
+          <a class="navbar-brand fs-6 color-navbar"><img class="img-fluid"  style="width: 40px;" src="img/nuvem-logo-bitweb-azul.png"  alt="logotipo da empresa que funciona como botao para a home"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,7 +56,7 @@
 
 <section class="mx-5 p-2 ">
     <div class="row align-items-center gap-4">
-        <div class="col m-3 p-5">
+        <div class="col-lg col-12 p-lg-5 ">
             <h3>Um pouco da nossa história</h3>
             <p class="text-start">A BitWebJr foi fundada em 2009, por um grupo de alunos e professores da UERJ, inspirados pelos ideais das empresas juniores. 
                 Ao longo dos anos, a BitWebJr ampliou sua atuação, expandindo seus serviços para projetos e produtos de tecnologia. 
@@ -66,48 +66,57 @@
             <button class="btn bg-welcome text-white mt-2">Quem somos</button>    
         </div>
         
-        <div class="col"><img src="img/B1 1.png" style="height: 400px; width: 400px;"></div>
+        <div class="col-lg col-12 justify-content-center"><img src="img/B1 1.png" style="height: 350px; width: 350px;"></div>
         <!--adicionar carrossel de imagens com pelo menos mais 3 fotos: euipe antiga, equipe nova, fotos nos eventos-->
     </div>
 </section>
 
-<section class="bg-welcome">
-    <div class="row">
-        <div class="col">imagem com algo sobre negócios</div>
-        <div class="col"> grid com quadrados arredondados com as vantagens de fazer negócio com a bitweb</div>
+<section class="bg-welcome text-light">
+    <div class="row gap-3 m-2 pt-5 ps-5 pe-5 pb-2 align-items-center justify-content-evenly">
+        <div class="col-xl-2 col order-1 order-lg-0"><img src="img/Blank-Fluorescent-Yellow-Square-Labels-s1y-600x600.png" class="img-chamada img-fluid"></div> 
+        <!--https://icons8.com/illustrations/illustration/clip-man-flying-on-a-rocket-1
+        https://icons8.com/illustrations/illustration/3d-flame-yellow-rocket-taking-off
+        -->
+        <div class="col-xl-3 col-7  order-0 order-lg-1 fs-3 fs-lg-2 fw-bold pe-lg-3">Porque escolher a BitwebJr</div>
+        <div class="col-9 col-sm-5 col-xl order-2 fs-5  fs-lg-3 text-center rounded-5 bg-chamadas p-3 fw-medium"><span class="fw-bold">Preço</span> competitivo</div>
+        <div class="col-9 col-sm-5 col-xl order-3 order-md-4 fs-5 fs-lg-3  text-center rounded-5 bg-chamadas p-3 fw-medium"><span class="fw-bold">Atendimento</span> personalizado</div>
+        <div class="col-9 col-sm-5 col-xl order-4 order-md-3 fs-5 fs-lg-3  text-center rounded-5 bg-chamadas p-3 fw-medium">Tecnologias atuais</div>  
+    </div>
+    <div class="row gap-3  ps-4 pe-4 pb-4  align-items-center">
+        
     </div>
 </section>
 
 <section class="mb-4">
     <div class="mx-5 p-2 mt-4">   
         <div class="row gap-4">
-            <div class="col">
-                    <div class="row-12 shadow-lg rounded-5 black p-4">
-                        <div class="row-4"><img src="img/bx-rocket 1.svg"></div>   
-                        <div class="row-4"><span class="fs-3 fw-bold">Missão</span></div>
+            <div class="col-lg">
+                    <div class="row-12 shadow-lg rounded-5 black p-4 justify-content-center">  
+                        <div class="col-4"><img src="img/bx-rocket 1.svg"></div>   
+                        <div class="col-4"><span class="fs-3 fw-bold">Missão</span></div>
                         <div class="row-4"><span class="fs-6 fw-medium text-center">Oferecer soluções inovadoras e acessíveis, 
                             sempre priorizando a humanização no atendimento e a busca pela satisfação do cliente.</span></div>
                     </div>
                     
             </div>
-            <div class="col">
-                <div class="row-12 shadow-lg rounded-5 blue offwhite p-4">
+            <div class="col-lg">
+                <div class="row-12- shadow-lg rounded-5 blue offwhite p-4">
                     <div class="row-4"><img src="img/bx-bullseye 1.svg"></div>
                     <div class="row-4"><span class="fs-3 fw-bold">Visão</span></div>
                     <div class="row-4"><span class="fs-6 fw-medium text-center">Ser reconhecida como uma EJ que forma profissionais 
                         capacitados e comprometidos com a transformação do mundo através da tecnologia.</span></div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg">
                 <div class="row-12 shadow-lg rounded-5 black p-4 align-self-center">
                     <div class="row-4"><img src="img/bxs-donate-heart 1.svg"></div>
                     <div class="row-4"><span class="fs-3 fw-bold">Valores</span></div>
                     <div class="row-4"><span class="fs-6 fw-medium text-center">
-                        Integridade e transparência<br>
-                        Ética e responsabilidade<br>
-                        Qualidade nos serviços<br>
-                        Aprendizado continuo<br>
-                        Criatividade
+                        Integridade e transparência, 
+                        Ética e responsabilidade, 
+                        Qualidade nos serviços, 
+                        Aprendizado continuo e
+                        Criatividade.
                     </span></div>
                 </div>
             </div>
@@ -119,14 +128,10 @@
 
 <footer class="bg-footer ">
     <div class="row align-items-center p-2">
-
-        <div class="col-3">
-            <div><img src="img/logo-bitweb-azul.png" style="width: 200px;" alt="logotipo da bitwebjr"></div>
-            <div>
-                
-            </div>
+        <div class="col">
+            <div><img class="img-fluid" src="img/logo-bitweb-azul.png" style="width: 150px;" alt="logotipo da bitwebjr"></div>
         </div>
-        <div class="col me-5"> 
+        <div class="col-5"> 
             <div class="row">
                 <div class=" col fw-bolder fs-5 text-black">Home</div>
                 <div class="col fw-bolder fs-5 text-black">Serviços</div>
@@ -134,13 +139,15 @@
                 <div class="col fw-bolder fs-5 text-black">Contato</div>
             </div>
         </div>
-        <div class="col-3 text-black">
-                <h3 class="fw-bold">Endereço</h3>
-                <ul>
-                    <li>Rua São Francisco Xavier, 524</li>
-                    <li>6º andar, sala 6005-B</li>
-                    <li>UERJ - Maracanã</li>
-                </ul>
+        <div class="col text-black">
+                <h3 class="fw-bold text-center fs-3 p-3">Redes Sociais</h3>
+                <div class="row">
+                
+                    <div class="col"><img src="img/Granito Vermelho F1.jpg"></div>
+                    <div class="col"><img src="img/Granito Vermelho F1.jpg"></div>
+                    <div class="col"><img src="img/Granito Vermelho F1.jpg"></div>
+                </div>
+               
         </div>
    
     </div>
