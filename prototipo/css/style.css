@@ -432,17 +432,15 @@ img{
 .menu__content{
   position: relative;
   display: flex;
-  flex-direction: column;
-  background-color: var(--container-color);
-  border-radius: .5rem;
-  box-shadow: 0 2px 4px rgba(3,74,40,.15);
+  flex-direction: column;  
   padding: .75rem;
 }
 
 .menu__img{
-  width: 100px;
+  width: 500px;
   align-self: center;
   margin-bottom: var(--mb-2);
+  border-radius: 100px;
 }
 
 .menu__name, .menu__preci{
@@ -525,6 +523,10 @@ img{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   margin-top: 3.5rem;
+}
+
+.link_rodape{
+  
 }
 
 /*========== MEDIA QUERIES ==========*/
