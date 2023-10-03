@@ -43,26 +43,6 @@
 
 }
 
-@media screen and (min-width: 768px){
-  :root{
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-}
-
-/*========== BASE ==========*/
-*,::before,::after{
-  box-sizing: border-box;
-}
-
-html{
-  scroll-behavior: smooth;
-}
 
 /*marca-texto*/
 .highlight-text{
@@ -70,15 +50,6 @@ html{
   background-color: #0f0ca0;
 }
 
-/*========== Button Carrinho ==========*/
-.change-theme{
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  cursor: pointer;
-}
 
 body{
   margin: var(--header-height) 0 0 0;
@@ -93,21 +64,15 @@ h1,h2,h3,p,ul{
   margin: 0;
 }
 
-ul{
-  padding: 0;
-  list-style: none;
-}
+
 
 a{
   text-decoration: none;
 }
 
-img{
-  max-width: 100%;
-  height: auto;
-}
 
-/*========== CLASS CSS ==========*/
+
+/*==========section==========*/
 .section{
   padding: 4rem 0 2rem;
 }
