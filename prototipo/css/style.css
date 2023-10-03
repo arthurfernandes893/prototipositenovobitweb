@@ -79,6 +79,9 @@ html{
   font-size: 1rem;
   cursor: pointer;
 }
+html, body {
+  overflow-x: hidden !important;
+  }
 
 body{
   margin: var(--header-height) 0 0 0;
